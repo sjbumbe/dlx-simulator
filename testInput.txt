@@ -1,0 +1,7 @@
+sub r3,r3,r2: 0x00621822
+labela:addi r8,r8,#-4: 0x2108FFFC
+beqz r8,end: 0x1100000C
+lw r7,12(r4): 0x8C87000C
+lb r13,-3(r10): 0x814DFFFD
+j labela: 0x0BFFFFEC
+end:sw 0(r5), r12: 0xACAC0000

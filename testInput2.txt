@@ -1,0 +1,13 @@
+addi r7, r8, r9: 0x21070009
+benz r7, end: 0xC4070007
+label A:
+sub r2, r15, r4: 0x01E41022
+LH r16, 4(R2): 0x84500004
+j label A: 0x0BFFFFF0
+AND r7, r11, r1: 0x01613824
+end:
+SB 2(R9), R16: 0xA1300002
+
+
+
+SB:
