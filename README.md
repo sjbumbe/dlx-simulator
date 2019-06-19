@@ -3,13 +3,21 @@ Part 1: The project was successful. All tested inputs returned correct outputs.
 
 Part 2: 
 •	Load_Program_Code(string filename)
+
 o	The purpose of this function is to load the hex values that were created in Project 1 into Project 2.
+
 o	The file is read line by line
+
 o	A stringstream is created and the hex version of the string is pushed inside of it
+
 o	That stringstream is then pushed into an unsigned number
+
 o	A bitset of length 32 is created and takes the value of the unsigned number and puts it in the bitset
+
 o	Then this is converted back into a string and pushed into the vector MAIN_MEMORY.
+
 o	At the end of getline all the hex values are stored in the vector MAIN_MEMORY as strings that appear as the binary value
+
 •	Read_Memory(int address, int word_byte_half)
 o	The purpose of this function is to read from MAIN_MEMORY at a specified address for a specified amount, either word, byte, or half.
 o	An empty string value is created to store whatever it is we are trying to load.
